@@ -14,7 +14,7 @@ inline void sum(summable& sum, int size, std::vector<summable> data)	// sum() wi
 }
 // Inline func for fill numeric array by values
 template <class numeric>
-inline void fill_array(std::vector<numeric> data, int size)
+inline void fill_array(std::vector<numeric>& data, int size)
 {
 	for (int i = 0; i < size; i++)					
 		data[i] = static_cast<numeric> (i);				// safety static cast in C++
